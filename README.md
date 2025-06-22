@@ -4,21 +4,65 @@
 ![Rezero2](https://github.com/user-attachments/assets/b439191d-126c-48ef-9781-d6c5ec28acea)
 
 Fanpage Re:Zero — Por Lucas Nogueira Silva (LuukaDev)
+Olá! Me chamo Lucas Nogueira Silva, também conhecido como LuukaDev, e desenvolvi esta fanpage de Re:Zero como parte do meu portfólio. O objetivo foi unir minha paixão por animes com minhas habilidades em desenvolvimento front-end, utilizando HTML, CSS com Tailwind e JavaScript para criar um site atrativo, interativo e responsivo.
 
+Funcionalidades
+O site é dividido em seções que proporcionam uma experiência completa para os fãs de Re:Zero:
 
-Olá! Eu sou o Lucas Nogueira Silva, também conhecido como LuukaDev, e criei essa fanpage de Re:Zero como um projeto de portfólio. Minha ideia foi unir minha paixão por animes com minhas habilidades em HTML, CSS (com Tailwind) e JavaScript, criando um site visualmente atrativo, interativo e totalmente responsivo.
+Início
+Apresenta um fundo com paralaxe e efeitos visuais com partículas.
 
-A página traz seções como:
+Sobre
+Explica a história, os temas principais e informações sobre o autor da obra.
 
-Início, com um fundo animado em paralaxe e partículas mágicas;
-Sobre, explicando a história e os temas principais do anime;
-Personagens, com cartões interativos dos protagonistas;
-Cenários, mostrando locais importantes da história;
-Quiz, que ajuda o visitante a descobrir com qual personagem ele mais se parece;
-Contato, onde compartilho meus links do GitHub, LinkedIn e Instagram.
+Personagens
+Exibe os principais personagens com cartões interativos com frente e verso.
 
-Todo o design segue uma estética neon roxo/rosa, inspirado na atmosfera mágica do anime. Também me preocupei com acessibilidade, animações suaves e experiência mobile.
-O projeto está hospedado no GitHub Pages e foi construído com uma estrutura simples: HTML5 semântico, CSS com Tailwind, JavaScript para animações e lógica do quiz. Usei também fontes do Google, ícones SVG e efeitos modernos como flip cards e rolagem suave.
-Esse projeto representa tanto o meu gosto por animes quanto o que posso fazer com desenvolvimento front-end. No futuro, pretendo adicionar novos recursos, como um formulário de contato funcional, uma galeria de fanarts e um botão para compartilhar o resultado do quiz.
+Cenários
+Mostra locais importantes da trama com imagens, títulos e descrições.
 
-Se quiser conhecer mais do meu trabalho ou conversar, os links estão todos lá na seção de contato. Obrigado por visitar!
+Quiz
+Um questionário interativo que mostra com qual personagem você mais se parece.
+
+Contato
+Links para meus perfis no GitHub, Instagram e LinkedIn.
+
+Estética e Design
+Todo o design foi inspirado na atmosfera mágica do anime, com uma paleta de cores em tons neon roxo e rosa. Usei Google Fonts, ícones SVG e efeitos modernos como rolagem suave, animações com Intersection Observer, cartões flip e transições visuais. A responsividade foi planejada desde o início com Tailwind CSS, garantindo uma boa experiência em dispositivos móveis e desktops.
+
+Tecnologias Utilizadas
+HTML5 – Estrutura semântica com foco em acessibilidade
+
+CSS3 com Tailwind – Estilização moderna, responsiva e baseada em utilitários
+
+JavaScript – Lógica do quiz, navegação suave e animações
+
+Google Fonts – Tipografia (Poppins)
+
+SVG – Ícones personalizados
+
+Intersection Observer – Animações por rolagem
+
+Estrutura de Pastas
+css
+Copiar
+Editar
+/
+├── index.html
+├── STY/
+│   └── Styles.css
+├── IMG/
+│   ├── HeroBackground.jpg
+│   ├── personagens/
+│   └── Cenarios/
+└── README.md
+Melhorias Futuras
+Adicionar botão para compartilhar o resultado do quiz
+
+Implementar um formulário de contato funcional
+
+Criar uma galeria de fanarts ou linha do tempo da história
+
+Informações Finais
+Data de criação: 22 de junho de 2025
+Este projeto representa não só meu gosto pessoal por animes como também meu domínio das principais tecnologias de front-end. Se quiser conhecer mais sobre meu trabalho ou conversar, fique à vontade para entrar em contato. Os links estão disponíveis na seção final do site.
