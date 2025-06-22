@@ -40,5 +40,6 @@ SVG – Ícones personalizados
 Intersection Observer – Animações por rolagem
 
 ------------ Informações Finais------------
+
 Data de criação: 22 de junho de 2025
 Este projeto representa não só meu gosto pessoal por animes como também meu domínio das principais tecnologias de front-end. Se quiser conhecer mais sobre meu trabalho ou conversar, fique à vontade para entrar em contato. Os links estão disponíveis na seção final do site.
