@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fanpage de Re:Zero - Starting Life in Another World, com informações sobre a história, personagens e cenários.">
+    <title>Re:Zero Fanpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="STY/StylesHome.css">
+    <link rel="icon" type="image/png" href="IMG/SubaruIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-200 font-poppins">
+    <!-- Cabeçalho -->
+    <header class="header bg-gray-900 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6" aria-label="Navegação principal">
+            <a href="#home" class="flex items-center space-x-2" aria-label="Página inicial da Re:Zero Fanpage">
+                <img src="IMG/SubaruIcon.png" alt="Logotipo estilizado de Re:Zero" class="logo w-12 h-12" loading="lazy">
+                <h1 class="text-2xl font-bold text-purple-400 hidden sm:block">Re:Zero Fanpage - Lucas Nogueira</h1>
+            </a>
+            <button class="hamburger md:hidden" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" type="button">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="desktop-menu hidden md:flex space-x-6" aria-label="Menu de navegação desktop">
+                <li><a href="#home" class="nav-link active text-gray-300 hover:text-purple-400 transition">Início</a></li>
+                <li><a href="#about" class="nav-link text-gray-300 hover:text-purple-400 transition">Sobre</a></li>
+                <li><a href="#characters" class="nav-link text-gray-300 hover:text-purple-400 transition">Personagens</a></li>
+                <li><a href="#scenarios" class="nav-link text-gray-300 hover:text-purple-400 transition">Cenários</a></li>
+                <li><a href="#quiz" class="nav-link text-gray-300 hover:text-purple-400 transition">Quiz</a></li>
+                <li><a href="#connect" class="nav-link text-gray-300 hover:text-purple-400 transition">Contato</a></li>
+            </ul>
+            <ul class="mobile-menu fixed inset-y-0 right-0 w-3/4 bg-gray-900 p-6 flex-col space-y-6 hidden md:hidden" id="mobile-menu" aria-label="Menu de navegação mobile">
+                <li><a href="#home" class="nav-link text-gray-200 hover:text-purple-400 transition text-xl">Início</a></li>
+                <li><a href="#about" class="nav-link text-gray-200 hover:text-purple-400 transition text-xl">Sobre</a></li>
+                <li><a href="#characters" class="nav-link text-gray-200 hover:text-purple-400 transition text-xl">Personagens</a></li>
+                <li><a href="#scenarios" class="nav-link text-gray-200 hover:text-purple-400 transition text-xl">Cenários</a></li>
+                <li><a href="#quiz" class="nav-link text-gray-200 hover:text-purple-400 transition text-xl">Quiz</a></li>
+                <li><a href="#connect" class="nav-link text-gray-200 hover:text-purple-400 transition text-xl">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero h-screen flex items-center justify-center relative overflow-hidden">
+        <canvas id="particle-canvas" class="absolute inset-0 z-0"></canvas>
+        <div class="hero-content text-center relative z-10">
+            <h2 class="hero-title text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">Bem-vindo ao Mundo de Re:Zero</h2>
+            <p class="hero-text text-lg sm:text-xl md:text-2xl mb-6 text-gray-200 drop-shadow-md">Explore a jornada de Subaru Natsuki e viva as emoções de <em>Re:Zero - Starting Life in Another World</em>!</p>
+            <a href="#about" class="hero-button inline-block bg-purple-600 text-white font-semibold rounded-full px-6 py-3 hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/50" aria-label="Saiba mais sobre Re:Zero">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about-section py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8 text-purple-400">Sobre Re:Zero</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 fade-in">
+                <div>
+                    <img src="IMG/logoRezero.png" alt="Banner temático de Re:Zero com Subaru e Emilia" class="about-image w-full h-auto rounded-lg mb-6" loading="lazy">
+                </div>
+                <div>
+                    <div class="mb-6">
+                        <h4 class="text-2xl font-semibold text-purple-300 mb-2">História</h4>
+                        <p class="text-lg text-gray-300">
+                            Re:Zero - Starting Life in Another World é um anime baseado na light novel de Tappei Nagatsuki. A história segue Subaru Natsuki, um jovem transportado para um mundo de fantasia onde descobre sua habilidade de "Retorno através da Morte", voltando no tempo após morrer. Ele usa esse poder para proteger seus aliados e mudar o destino, enfrentando desafios emocionais e perigos mortais.
+                        </p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-2xl font-semibold text-purple-300 mb-2">Temas Principais</h4>
+                        <p class="text-lg text-gray-300">
+                            O anime explora temas como sacrifício, resiliência e o peso das escolhas. A jornada de Subaru destaca a importância de perseverar apesar do sofrimento, enquanto o mundo de Lugnica apresenta intrigas políticas e batalhas épicas.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold text-purple-300 mb-2">Autor</h4>
+                        <p class="text-lg text-gray-300">
+                            Escrito por Tappei Nagatsuki e ilustrado por Shinichirou Otsuka, *Re:Zero* começou como uma web novel antes de se tornar uma light novel de sucesso, adaptada para anime pelo estúdio White Fox.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Personagens -->
+    <section id="characters" class="characters-section bg-gray-800 py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8 text-purple-400">Personagens Principais</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Card Subaru -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Subaru1.jpg" alt="Subaru Natsuki em uma cena de ação" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Subaru Natsuki</h4>
+                                <p class="text-gray-400 text-sm">O protagonista que retorna à vida após morrer.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Subaru2.png" alt="Render de Subaru Natsuki com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Subaru Natsuki</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: 18 anos<br>Habilidade: Retorno por Morte<br>Um jovem determinado que enfrenta o destino para proteger seus amigos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Emilia -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Emilia1.jpg" alt="Emilia em um momento mágico" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Emilia</h4>
+                                <p class="text-gray-400 text-sm">Uma meio-elfa gentil e candidata ao trono.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Emilia2.png" alt="Render de Emilia com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Emilia</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: Desconhecida<br>Habilidade: Magia de Gelo<br>Uma candidata ao trono com um coração puro.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Puck -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Puck1.jpg" alt="Puck em forma de espírito" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Puck</h4>
+                                <p class="text-gray-400 text-sm">Espírito companheiro de Emilia.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Puck2.png" alt="Render de Puck com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Puck</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: Desconhecida<br>Habilidade: Magia de Gelo<br>Protetor leal de Emilia com um lado brincalhão.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Beatrice -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Beatrice1.jpg" alt="Beatrice na biblioteca proibida" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Beatrice</h4>
+                                <p class="text-gray-400 text-sm">Guardiã da biblioteca proibida.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Beatrice2.png" alt="Render de Beatrice com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Beatrice</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: 400+ anos<br>Habilidade: Magia Yin<br>Uma espírito com um coração leal, supõe-se.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Rem -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Rem1.jpg" alt="Rem em pose de combate" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Rem</h4>
+                                <p class="text-gray-400 text-sm">Uma das gêmeas demônio, leal a Subaru.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Rem2.png" alt="Render de Rem com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Rem</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: 17 anos<br>Habilidade: Combate e Magia<br>Leal e apaixonada, sempre apoia Subaru.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Ram -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Ram1.jpg" alt="Ram em um momento de apoio" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Ram</h4>
+                                <p class="text-gray-400 text-sm">Irmã gêmea de Rem, sarcástica e leal.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Ram2.png" alt="Render de Ram com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Ram</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: 17 anos<br>Habilidade: Magia de Vento<br>Eficiente e leal, mas com uma língua afiada.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Roswaal -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Roswaal1.jpg" alt="Roswaal em sua mansão" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Roswaal L Mathers</h4>
+                                <p class="text-gray-400 text-sm">Mago excêntrico e patrono de Emilia.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Roswaal2.png" alt="Render de Roswaal com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Roswaal L Mathers</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: Desconhecida<br>Habilidade: Magia Multielemental<br>Um estrategista com objetivos misteriosos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Otto Suwen -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Otto1.jpg" alt="Otto Suwen com sua carroça em Re:Zero" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Otto Suwen</h4>
+                                <p class="text-gray-400 text-sm">Comerciante e aliado leal de Subaru.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Otto2.png" alt="Render de Otto Suwen com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Otto Suwen</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: 20 anos<br>Habilidade: Bênção da Fala com Almas<br>Um comerciante astuto que se torna um amigo indispensável.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Garfiel Tinsel -->
+                <div class="character-card h-96 fade-in">
+                    <div class="card-inner">
+                        <div class="card-front bg-gray-900">
+                            <img src="IMG/Garfiel1.jpg" alt="Garfiel Tinsel em pose de combate no Santuário" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold mb-2 text-white">Garfiel Tinsel</h4>
+                                <p class="text-gray-400 text-sm">Protetor feroz do Santuário.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img src="IMG/Garfiel2.png" alt="Render de Garfiel Tinsel com fundo transparente" class="mb-4" loading="lazy">
+                            <h4 class="text-lg font-bold mb-2 text-white">Garfiel Tinsel</h4>
+                            <p class="text-gray-300 text-xs text-center">Idade: 14 anos<br>Habilidade: Transformação em Besta<br>Um jovem forte com um passado marcado por lealdade e trauma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cenários -->
+    <section id="scenarios" class="scenarios-section py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8 text-purple-400">Cenários de Re:Zero</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card Mansão de Roswaal -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/MansãoRoswaal.jpg" alt="Mansão de Roswaal em Re:Zero ao entardecer" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Mansão de Roswaal</h4>
+                        <p class="text-sm text-gray-300">A luxuosa residência de Roswaal L Mathers, lar de Emilia e palco de eventos cruciais nas primeiras temporadas.</p>
+                    </div>
+                </div>
+                <!-- Card Santuário -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/Santuario.jpg" alt="Santuário místico em Re:Zero envolto em névoa" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Santuário</h4>
+                        <p class="text-sm text-gray-300">Um local místico protegido por uma barreira, lar de Echidna e centro de revelações no arco 4.</p>
+                    </div>
+                </div>
+                <!-- Card Capital de Lugnica -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/Luconica.jpg" alt="Capital de Lugnica em Re:Zero com castelo ao fundo" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Capital de Lugnica</h4>
+                        <p class="text-sm text-gray-300">O coração político do reino, onde ocorrem a Seleção Real e intrigas entre os candidatos ao trono.</p>
+                    </div>
+                </div>
+                <!-- Card Floresta de Elior -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/Floresta.jpg" alt="Floresta de Elior coberta de neve em Re:Zero" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Floresta de Elior</h4>
+                        <p class="text-sm text-gray-300">Uma floresta congelada, lar de Emilia e Puck, marcada por um passado trágico.</p>
+                    </div>
+                </div>
+                <!-- Card Biblioteca Proibida -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/Biblioteca.jpg" alt="Biblioteca Proibida de Beatrice em Re:Zero com estantes mágicas" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Biblioteca Proibida</h4>
+                        <p class="text-sm text-gray-300">O refúgio místico de Beatrice, com portas que conectam a diferentes lugares da mansão.</p>
+                    </div>
+                </div>
+                <!-- Card Priestella -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/Priestella.jpg" alt="Cidade aquática de Priestella em Re:Zero com canais iluminados" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Priestella</h4>
+                        <p class="text-sm text-gray-300">A cidade aquática de canais, palco de confrontos épicos e intrigas no arco 5.</p>
+                    </div>
+                </div>
+                <!-- Card Campo de Echidna -->
+                <div class="scenario-card fade-in">
+                    <img src="IMG/Cenarios/CampoEchidna.jpg" alt="Campo de Echidna no Santuário em Re:Zero com flores e névoa" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2 text-purple-300">Campo de Echidna</h4>
+                        <p class="text-sm text-gray-300">O espaço onírico de chá onde Subaru encontra Echidna, repleto de flores e mistérios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quiz -->
+    <section id="quiz" class="quiz-section py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8 text-purple-400">Qual Personagem de Re:Zero Você É?</h3>
+            <p class="text-lg text-gray-300 text-center mb-12">Responda algumas perguntas e descubra qual personagem de Re:Zero mais se parece com você!</p>
+            <form id="quiz-form" class="quiz-form max-w-2xl mx-auto fade-in">
+                <!-- Pergunta 1 -->
+                <div class="quiz-question mb-8">
+                    <h4 class="text-xl font-semibold text-purple-300 mb-4">1. Como você enfrenta desafios?</h4>
+                    <label class="block mb-2">
+                        <input type="radio" name="q1" value="subaru" class="mr-2" required>
+                        Persisto, mesmo que doa, para proteger quem amo.
+                    </label>
+                    <label class="block mb-2">
+                        <input type="radio" name="q1" value="emilia" class="mr-2">
+                        Foco em manter a calma e usar minha inteligência.
+                    </label>
+                    <label class="block mb-2">
+                        <input type="radio" name="q1" value="rem" class="mr-2">
+                        Apoio quem está ao meu lado com total dedicação.
+                    </label>
+                </div>
+                <!-- Pergunta 2 -->
+                <div class="quiz-question mb-8">
+                    <h4 class="text-xl font-semibold text-purple-300 mb-4">2. Qual é sua maior qualidade?</h4>
+                    <label class="block mb-2">
+                        <input type="radio" name="q2" value="subaru" class="mr-2" required>
+                        Determinação incansável.
+                    </label>
+                    <label class="block mb-2">
+                        <input type="radio" name="q2" value="emilia" class="mr-2">
+                        Bondade e empatia.
+                    </label>
+                    <label class="block mb-2">
+                        <input type="radio" name="q2" value="rem" class="mr-2">
+                        Lealdade absoluta.
+                    </label>
+                </div>
+                <!-- Pergunta 3 -->
+                <div class="quiz-question mb-8">
+                    <h4 class="text-xl font-semibold text-purple-300 mb-4">3. Em uma crise, você...</h4>
+                    <label class="block mb-2">
+                        <input type="radio" name="q3" value="subaru" class="mr-2" required>
+                        Tenta de novo, custe o que custar.
+                    </label>
+                    <label class="block mb-2">
+                        <input type="radio" name="q3" value="emilia" class="mr-2">
+                        Busca uma solução pacífica e justa.
+                    </label>
+                    <label class="block mb-2">
+                        <input type="radio" name="q3" value="rem" class="mr-2">
+                        Protege quem é importante a qualquer custo.
+                    </label>
+                </div>
+                <button type="submit" class="quiz-button block mx-auto bg-purple-600 text-white font-semibold rounded-full px-6 py-3 hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/50">Ver Resultado</button>
+            </form>
+            <div id="quiz-result" class="quiz-result hidden max-w-2xl mx-auto mt-8 p-6 bg-gray-900 rounded-lg border border-purple-500 fade-in">
+                <h4 class="text-2xl font-bold text-purple-400 mb-4">Seu Resultado!</h4>
+                <div id="result-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Conectar -->
+    <section id="connect" class="connect-section py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8 text-purple-400">Conecte-se Comigo</h3>
+            <p class="text-lg text-gray-300 text-center mb-12">Sou Lucas Nogueira Silva, um desenvolvedor apaixonado por anime e tecnologia. Siga-me para mais projetos como este!</p>
+            <div class="social-links flex justify-center gap-8 fade-in">
+                <a href="https://github.com/LuukaDev" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu perfil no GitHub">
+                    <svg class="w-12 h-12 text-gray-300 hover:text-purple-400 transition-all duration-300 hover:shadow-purple-500/50" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.17c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.398 3-.405 1.02.007 2.043.138 3 .405 2.295-1.552 3.3-1.23 3.3-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.93.42.36.81 1.096.81 2.22v3.285c0 .32.21.694.825.577C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/Luuka_Dev/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu perfil no Instagram">
+                    <svg class="w-12 h-12 text-gray-300 hover:text-purple-400 transition-all duration-300 hover:shadow-purple-500/50" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.425.065-2.694.393-3.702 1.401-1.008 1.008-1.336 2.277-1.401 3.702-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.065 1.425.393 2.694 1.401 3.702 1.008 1.008 2.277 1.336 3.702 1.401 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.425-.065 2.694-.393 3.702-1.401 1.008-1.008 1.336-2.277 1.401-3.702.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.065-1.425-.393-2.694-1.401-3.702-1.008-1.008-2.277-1.336-3.702-1.401-1.28-.058-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/lucasnogsilva/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu perfil no LinkedIn">
+                    <svg class="w-12 h-12 text-gray-300 hover:text-purple-400 transition-all duration-300 hover:shadow-purple-500/50" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .792 0 1.771v20.452C0 23.208.792 24 1.771 24h20.452c.979 0 1.771-.792 1.771-1.771V1.771C24 .792 23.208 0 22.225 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p class="text-gray-400">Criado por Lucas Nogueira Silva para o portfólio | © 2025 Re:Zero Fanpage</p>
+    </footer>
+
+    <script>
+        // Suavizar rolagem para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+                if (mobileMenu.classList.contains('open')) {
+                    hamburger.click(); // Fecha o menu mobile após clique
+                }
+                // Atualizar classe active
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Efeito de fade-in ao rolar
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Menu hambúrguer para mobile
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+            mobileMenu.classList.toggle('hidden');
+            const isOpen = hamburger.classList.contains('open');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Fechar menu mobile ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target) && mobileMenu.classList.contains('open')) {
+                hamburger.click();
+            }
+        });
+
+        // Partículas no Hero
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        const particleCount = 100;
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 0.5 - 0.25;
+                this.speedY = Math.random() * 0.5 - 0.25;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.fillStyle = 'rgba(147, 51, 234, 0.5)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        initParticles();
+        animateParticles();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Quiz Logic
+        const quizForm = document.getElementById('quiz-form');
+        const quizResult = document.getElementById('quiz-result');
+        const resultContent = document.getElementById('result-content');
+
+        quizForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const answers = {
+                subaru: 0,
+                emilia: 0,
+                rem: 0
+            };
+
+            const formData = new FormData(quizForm);
+            formData.forEach((value) => {
+                answers[value]++;
+            });
+
+            let maxCharacter = 'subaru';
+            let maxScore = answers.subaru;
+            if (answers.emilia > maxScore) {
+                maxCharacter = 'emilia';
+                maxScore = answers.emilia;
+            }
+            if (answers.rem > maxScore) {
+                maxCharacter = 'rem';
+            }
+
+            const results = {
+                subaru: {
+                    name: 'Subaru Natsuki',
+                    description: 'Você é como Subaru: determinado, resiliente e disposto a enfrentar qualquer desafio para proteger quem ama. Sua força vem da persistência, mesmo diante do sofrimento.',
+                    image: 'IMG/Subaru2.png'
+                },
+                emilia: {
+                    name: 'Emilia',
+                    description: 'Você é como Emilia: gentil, empático e busca soluções justas. Sua bondade ilumina os outros, e você mantém a calma mesmo nas situações mais difíceis.',
+                    image: 'IMG/Emilia2.png'
+                },
+                rem: {
+                    name: 'Rem',
+                    description: 'Você é como Rem: leal, dedicado e sempre coloca quem ama em primeiro lugar. Sua força está no apoio incondicional e na coragem para proteger os outros.',
+                    image: 'IMG/Rem2.png'
+                }
+            };
+
+            const result = results[maxCharacter];
+            resultContent.innerHTML = `
+                <img src="${result.image}" alt="${result.name}" class="w-32 h-32 mx-auto mb-4 object-contain" loading="lazy">
+                <p class="text-lg text-gray-200">Você é <strong>${result.name}</strong>!</p>
+                <p class="text-gray-300 mt-2">${result.description}</p>
+            `;
+            quizResult.classList.remove('hidden');
+            quizResult.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
