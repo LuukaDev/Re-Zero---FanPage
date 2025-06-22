@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
     background-color: #1a202c;
     color: #e2e8f0;
@@ -7,14 +7,14 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Header */
+
 .header {
     background: rgba(26, 32, 44, 0.8);
     backdrop-filter: blur(8px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Hamburger Menu */
+
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ body {
     text-shadow: 0 0 10px rgba(217, 70, 239, 0.6), 0 0 20px rgba(217, 70, 239, 0.3);
 }
 
-/* Desktop Menu */
+
 .desktop-menu {
     display: none;
 }
@@ -132,7 +132,7 @@ body {
     box-shadow: 0 0 15px rgba(217, 70, 239, 0.2);
 }
 
-/* Hero Section */
+
 .hero {
     background-image: url('IMG/HeroBackground.jpg');
     background-size: cover;
@@ -225,7 +225,7 @@ body {
     filter: drop-shadow(0 0 10px rgba(147, 51, 234, 0.5));
 }
 
-/* Characters Section */
+
 .characters-section {
     background: linear-gradient(180deg, rgba(75, 0, 130, 0.2), rgba(0, 0, 0, 0.8));
 }
@@ -279,7 +279,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Scenarios Section */
+
 .scenarios-section {
     background: linear-gradient(180deg, rgba(75, 0, 130, 0.15), rgba(0, 0, 0, 0.7));
 }
@@ -297,7 +297,7 @@ body {
     box-shadow: 0 10px 20px rgba(147, 51, 234, 0.5);
 }
 
-/* Quiz Section */
+
 .quiz-section {
     background: linear-gradient(180deg, rgba(75, 0, 130, 0.2), rgba(0, 0, 0, 0.8));
 }
@@ -337,7 +337,7 @@ body {
     transition: opacity 0.6s ease-out;
 }
 
-/* Connect Section */
+
 .connect-section {
     background: linear-gradient(180deg, rgba(75, 0, 130, 0.1), transparent);
     border-top: 2px solid rgba(147, 51, 234, 0.3);
@@ -352,7 +352,7 @@ body {
     filter: drop-shadow(0 0 10px rgba(147, 51, 234, 0.5));
 }
 
-/* Fade-in Animation */
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
