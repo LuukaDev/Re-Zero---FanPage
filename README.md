@@ -3,8 +3,6 @@
 ![ReZero1](https://github.com/user-attachments/assets/49770cbb-29b1-4c1e-bf17-a5d760bdb5a3)
 ![Rezero2](https://github.com/user-attachments/assets/b439191d-126c-48ef-9781-d6c5ec28acea)
 
-Documentação da Fanpage de Re:Zero
-
 Fanpage Re:Zero — Por Lucas Nogueira Silva (LuukaDev)
 Olá! Eu sou o Lucas Nogueira Silva, também conhecido como LuukaDev, e criei essa fanpage de Re:Zero como um projeto de portfólio. Minha ideia foi unir minha paixão por animes com minhas habilidades em HTML, CSS (com Tailwind) e JavaScript, criando um site visualmente atrativo, interativo e totalmente responsivo.
 
